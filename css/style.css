@@ -1,0 +1,68 @@
+body {
+  background-color: #0a0202;
+  min-height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.typing {
+  width: 50%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  color: greenyellow;
+  font-weight: 700;
+}
+
+.typing p {
+  margin: 0;
+  line-height: 150%;
+  text-shadow: 0 0 4px greenyellow;
+}
+
+.typing p::before {
+  content: "> ";
+}
+
+.typing p:last-child::after {
+  content: "_";
+  -webkit-animation: cursor .3s infinite alternate;
+          animation: cursor .3s infinite alternate;
+}
+
+.robot {
+  width: 30%;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes cursor {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  70%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cursor {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  70%,
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
